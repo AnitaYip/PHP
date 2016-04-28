@@ -1,7 +1,11 @@
 <?php
 require_once('constants.php');
 
-$array = array(
+var $array = array(
 	$WELCOME => $ONE,
-	$GOODBYE => "constant");
+	$GOODBYE => $FIVE);
+
+var $result = $array($WELCOME) * $array($GOODBYE);
+settype($res, int);
+
 ?>
