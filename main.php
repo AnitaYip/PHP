@@ -1,12 +1,12 @@
 <?php
 require_once('constants.php');
 
-var $array = array(
-	$WELCOME => $ONE,
-	$GOODBYE => $FIVE);
+$array = array(
+	WELCOME => ONE,
+	GOODBYE => FIVE);
 
-var $result = $array[$WELCOME] * $array[$GOODBYE];
-settype($res, int);
+$result = $array[WELCOME] * $array[GOODBYE];
+settype($result, integer);
 
-echo 'The result of ' . {$array[$WELCOME]} . ' * ' . {$array[$GOODBYE]} . 'is: ' . $result;
+echo "The result of {$array[WELCOME]}  *  {$array[GOODBYE]} is: $result";
 ?>
