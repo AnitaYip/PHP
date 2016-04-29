@@ -2,7 +2,7 @@
 
 $numbers = range(0,100,3);
 $index = 0;
-while( $index < count($numbers)) {
+do {
 	$num = $numbers[$index];
 	if($num != 0 and $num % 7 == 0) {
 		if($index == 7) {
@@ -23,5 +23,5 @@ while( $index < count($numbers)) {
 		echo "$num is a round number\n";
 	}
 	$index++;
-}
+} while($index < count($numbers));
 ?>
