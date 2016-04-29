@@ -1,10 +1,9 @@
 <?php
 
 $numbers = range(0,100,3);
-$first7 = '';
-$first10 = '';
 
-foreach ($numbers as $index => $num) {
+for($index = 0; $index < count($numbers); $index++) {
+	$num = $numbers[$index];
 	if($num != 0 and $num % 7 == 0) {
 		if($index == 7) {
 			echo "First number:\t";
