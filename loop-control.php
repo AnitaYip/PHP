@@ -1,20 +1,27 @@
 <?php
 
 $numbers = range(0,100,3);
+$first7 = '';
+$first10 = '';
 
-foreach ($numbers as $num) {
-	$str = '';
-	switch ($num) {
-		case 3:
-			$str = "Three\n";
-			break;
-		case 9:
-			$str = "Nine\n";
-			break;
-		case 15:
-			$str = "Fifteen\n";
-			break;
+foreach ($numbers as $index => $num) {
+	if($num != 0 and $num % 7 == 0) {
+		if($index == 7) {
+			echo "First number:\t";
+		}
+		if(count($numbers)-$index < 7) {
+			echo "Last number:\t";
+		}
+		echo "Sevens are lucky, this number has " . $num/7 . "\n";
+
+	} elseif ($num != 0 and $num % 10 == 0) {
+		if($index == 10) {
+			echo "First number:\t";
+		}
+		if(count($numbers)-$index < 10) {
+			echo "Last number:\t";
+		}
+		echo "$num is a round number\n";
 	}
-	echo str_repeat($str, $num/3);
 }
 ?>
