@@ -1,9 +1,6 @@
 <?php
 
-$numbers = array();
+$numbers = range(0,100,3);
 
-for($i=0;$i<100;$i=$i+3){
-	$numbers[] = $i;
-}
 print_r(array_values($numbers));
 ?>
