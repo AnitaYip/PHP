@@ -1,8 +1,8 @@
 <?php
 
 $numbers = range(0,100,3);
-
-for($index = 0; $index < count($numbers); $index++) {
+$index = 0;
+while( $index < count($numbers)) {
 	$num = $numbers[$index];
 	if($num != 0 and $num % 7 == 0) {
 		if($index == 7) {
@@ -22,5 +22,6 @@ for($index = 0; $index < count($numbers); $index++) {
 		}
 		echo "$num is a round number\n";
 	}
+	$index++;
 }
 ?>
