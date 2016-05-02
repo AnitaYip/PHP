@@ -1,15 +1,10 @@
 <?php
 namespace advanced;
 require_once('Workstation.php');
+require_once('HardDrive.php');
 
 class Mac extends Workstation
 {
-	private $hardDrive = "Solid state drive";
-
-	public function getHardDrive()
-	{
-		parent::getHardDrive();
-		echo "Child class getHardDrive : " . $this->hardDrive;
-	}
-
+	use HardDrive;
+	
 }
