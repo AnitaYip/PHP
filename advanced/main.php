@@ -9,7 +9,7 @@ use advanced\Mac;
 
 $databaseServer = new DBS();
 
-//echo $databaseServer->getConnection(); // Public/Private property & function demo
+echo $databaseServer->getConnection(); // Public/Private property & function demo
 
 $mac = new Mac();
 

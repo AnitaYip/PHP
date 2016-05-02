@@ -3,7 +3,12 @@ namespace advanced;
 trait HardDrive {
 	public function getHardDrive(){
 		
-		echo "This has a hard drive. And it has a trait\n";
+		
+		$message = function () {
+			return "This has a hard drive. And it has a trait and a closure\n";
+		};
+		
+		echo $message();
 		parent::getHardDrive();
 	}
 }

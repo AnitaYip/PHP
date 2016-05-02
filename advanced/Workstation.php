@@ -8,7 +8,10 @@ class Workstation implements Computer
 
 	public function getHardDrive()
 	{
-		echo "Parent class getHardDrive : " . $this->hardDrive;
+		$msg = function() {
+			return "Parent class getHardDrive : " . $this->hardDrive . "\n";
+		};
+		echo $msg();
 	}
 
 }
