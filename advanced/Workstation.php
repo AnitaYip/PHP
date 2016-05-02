@@ -2,7 +2,13 @@
 namespace advanced;
 require_once('Computer.php');
 
-class Workstation extends Computer
+class Workstation implements Computer
 {
+	private $hardDrive = "Hard drive";
+
+	public function getHardDrive()
+	{
+		echo "Parent class getHardDrive : " . $this->hardDrive;
+	}
 
 }
