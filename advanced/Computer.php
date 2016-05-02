@@ -1,5 +1,7 @@
 <?php
 
+namespace advanced;
+
 class Computer 
 {
 	private $hardDrive = "Hard Drive";
